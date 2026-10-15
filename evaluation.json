@@ -1,0 +1,85 @@
+{
+  "mode": "extractive; no LLM calls",
+  "scope": "8 hand-authored smoke cases on 2 fictional documents; not generalization or answer-quality evaluation",
+  "retrieval_hit_at_3": 1.0,
+  "abstention_accuracy": 1.0,
+  "cases": [
+    {
+      "question": "How do I create an order?",
+      "expected_source": "orders.md",
+      "passed": true,
+      "status": "excerpts_only",
+      "latency_ms": 2.61,
+      "sources": [
+        "orders.md"
+      ]
+    },
+    {
+      "question": "When do authentication tokens expire?",
+      "expected_source": "orders.md",
+      "passed": true,
+      "status": "excerpts_only",
+      "latency_ms": 1.19,
+      "sources": [
+        "orders.md"
+      ]
+    },
+    {
+      "question": "Which fields are required in order items?",
+      "expected_source": "orders.md",
+      "passed": true,
+      "status": "excerpts_only",
+      "latency_ms": 1.09,
+      "sources": [
+        "orders.md"
+      ]
+    },
+    {
+      "question": "What is the API request rate limit?",
+      "expected_source": "operations.md",
+      "passed": true,
+      "status": "excerpts_only",
+      "latency_ms": 1.03,
+      "sources": [
+        "operations.md",
+        "orders.md"
+      ]
+    },
+    {
+      "question": "What happens after a deployment fails?",
+      "expected_source": "operations.md",
+      "passed": true,
+      "status": "excerpts_only",
+      "latency_ms": 1.01,
+      "sources": [
+        "operations.md"
+      ]
+    },
+    {
+      "question": "Where is the service health endpoint?",
+      "expected_source": "operations.md",
+      "passed": true,
+      "status": "excerpts_only",
+      "latency_ms": 0.99,
+      "sources": [
+        "operations.md"
+      ]
+    },
+    {
+      "question": "Who won the tennis championship?",
+      "expected_source": null,
+      "passed": true,
+      "status": "insufficient_evidence",
+      "latency_ms": 1.03,
+      "sources": []
+    },
+    {
+      "question": "What is the capital of Mongolia?",
+      "expected_source": null,
+      "passed": true,
+      "status": "insufficient_evidence",
+      "latency_ms": 0.98,
+      "sources": []
+    }
+  ]
+}
